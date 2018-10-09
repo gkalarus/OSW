@@ -8,11 +8,58 @@ header {
         background-image: none;
         box-shadow: none;
     }
+
     .navbar-toggler {
         background-color: #fff;
     }
 }
 
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
+    .links-center {
+        position: relative;
+        width: 15rem;
+        a {
+            &:nth-child(1) {
+                position: absolute;
+                top: calc(8.3rem/2);
+                left: 0;
+                transform: translateY(-50%);
+            }
+            &:nth-child(2) {
+                position: absolute;
+                top: calc(8.3rem/2);
+                right: 0;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    .links-icons {
+        position: relative;
+        width: 32rem;
+        height: 13.7rem;
+        a {
+            &:nth-child(1) {
+                position: absolute;
+                top: 3px;
+                right: 8.1rem;
+            }
+            &:nth-child(2) {
+                position: absolute;
+                top: 3px;
+                right: 15.9rem;
 
- }
+            }
+            &:nth-child(3) {
+                position: absolute;
+                top: 3px;
+                right: 23.7rem;
+
+            }
+        }
+        img:last-child {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}
