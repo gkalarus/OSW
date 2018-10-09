@@ -2,4 +2,62 @@ main {
     background: url('../images/elem-bg-white.png') no-repeat center center fixed;
     background-size: cover;
     min-height: calc(100vh - 8.3rem - 4.5rem);
+    .modules {
+        .module {
+            margin-top: 5rem;
+            padding: 2rem;
+            width: 25rem;
+            display: flex;
+            flex-direction: column;
+            &__photo {
+                align-self: center;
+                width: 100%;
+                height: 19rem;
+            }
+            &__content {
+                width: 100%;
+                color: $white;
+                background-color: $card-black;
+                padding: 2rem;
+                .progress {
+                    border-radius: 0;
+                }
+                .progress-bar {
+                    background-color: $bar-green;
+                }
+                h1 {
+                    font-size: 2rem;
+                }
+                a {
+                    font-size: 1.6rem;
+                    display: block;
+                    padding-top: 1rem;
+                    color: $white;
+                    text-decoration: none;
+                }
+            }
+        }
+        .module:nth-of-type(1) {
+            .module__photo {
+                background: url('../images/products.jpeg') no-repeat center center;
+                background-size: cover;
+
+            }
+        }
+        .module:nth-of-type(2) {
+            .module__photo {
+                background: url('../images/procedures.jpeg') no-repeat center center;
+                background-size: cover;
+
+            }
+        }
+        .module:nth-of-type(3) {
+            margin-bottom: 10rem;
+            .module__photo {
+                background: url('../images/vision.jpeg') no-repeat center center;
+                background-size: cover;
+
+            }
+        }
+    }
 }
