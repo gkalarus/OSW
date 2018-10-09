@@ -1,0 +1,50 @@
+footer {
+    background: url("../images/elem-bg-univ-mini.png");
+    height: 4.5rem;
+
+
+    .container {
+        height: 100%;
+        background: url("../images/elem-bot-icons.png") center no-repeat;
+        background-size: 100%;
+
+        .col {
+            position: relative;
+
+            .red-profile {
+                position: absolute;
+                bottom: 4.5rem;
+                left: 0;
+                bottom: 1px;
+            }
+
+            p {
+                font-size: 1rem;
+                color: $white;
+                padding: 0;
+                position: absolute;
+                top: calc(50% + 4.5rem/2);
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    footer {
+        .container {
+            .col {
+                p {
+                    font-size: 1.6rem;
+                }
+            }
+       
+        }
+    }
+
+}

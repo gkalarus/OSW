@@ -1,4 +1,16 @@
 header {
     height: 8.3rem;
     background: url("../images/elem-bg-univ-mini.png");
+
+    nav.bg-light {
+        background-color: transparent !important;
+        border-color: transparent;
+        background-image: none;
+        box-shadow: none;
+    }
+    .navbar-toggler {
+        background-color: #fff;
+    }
+
+
 }
