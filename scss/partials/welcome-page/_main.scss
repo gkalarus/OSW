@@ -3,6 +3,7 @@ main {
     background-size: cover;
     min-height: calc(100vh - 8.3rem - 4.5rem);
     .modules {
+        padding-top: 5rem;
         .module {
             position: relative;
             margin-top: 5rem;
@@ -22,6 +23,7 @@ main {
                 padding: 2rem;
                 .progress {
                     border-radius: 0;
+                    background-color: $bar-dark;
                 }
                 .progress-bar {
                     background-color: $bar-green;
