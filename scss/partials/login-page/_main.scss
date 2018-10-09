@@ -1,0 +1,164 @@
+main {
+    background: url('../images/elem-bg-white.png') no-repeat center center fixed;
+    background-size: cover;
+    min-height: calc(100vh - 8.3rem - 4.5rem);
+
+    .form-box {
+        background-color: white;
+        border: 1px solid $form-border;
+        width: 80%;
+        margin: 1.5rem;
+
+        form {
+            font-size: 1.6rem;
+            padding: 2.5rem;
+
+            h1 {
+                color: $blue;
+                font-weight: 700;
+                margin-bottom: 2rem;
+            }
+
+            label {
+                color: $grey;
+            }
+
+            .form-group:nth-child(2),
+            .form-group:nth-child(3) {
+                input {
+                    border-radius: 0;
+                    height: 4rem;
+                    font-size: 2rem;
+                }
+            }
+
+            .form-group:nth-child(4) {
+                margin-bottom: 2rem;
+            }
+
+            .round {
+                position: relative;
+
+                label:nth-of-type(1) {
+                    background-color: #fff;
+                    border: 2px solid $blue;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    height: 2.8rem;
+                    left: 0;
+                    position: absolute;
+                    top: 0;
+                    width: 2.8rem;
+
+                    &::after {
+                        border: 2px solid $blue;
+                        border-top: none;
+                        border-right: none;
+                        content: "";
+                        height: 6px;
+                        left: 7px;
+                        opacity: 0;
+                        position: absolute;
+                        top: 8px;
+                        transform: rotate(-45deg);
+                        width: 12px;
+                    }
+                }
+
+                input[type="checkbox"] {
+                    visibility: hidden;
+
+                    &:checked+label {
+                        background-color: white;
+                        border-color: $blue;
+                    }
+
+                    &:checked+label::after {
+                        opacity: 1;
+                    }
+                }
+
+                label:nth-of-type(2) {
+                    margin-left: 3rem;
+                }
+            }
+
+            .btns {
+                button {
+                    padding: 1rem 1rem;
+                    font-size: 2rem;
+                    width: 100%;
+                    border-radius: 0;
+                    border: none;
+                    color: $white;
+                    cursor: pointer;
+
+                    &:nth-child(1) {
+                        background-color: $btn-blue;
+                    }
+
+                    &:nth-child(2) {
+                        background-color: $btn-grey;
+                    }
+                }
+            }
+
+            a {
+                color: $grey;
+                margin-top: 4rem;
+                margin-bottom: 4rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+    main {
+        .form-box {
+            width: 60%;
+
+            form {
+                font-size: 2rem;
+
+                h1 {
+                    font-size: 3rem;
+                }
+
+                .btns {
+                    button {
+                        width: 35%;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width: 992px) {
+    main {
+        .form-box {
+            width: 50%;
+
+            form {
+                font-size: 2.2rem;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 1200px) {
+    main {
+        .form-box {
+            width: 40%;
+
+            form {
+                font-size: 2.4rem;
+            }
+
+        }
+    }
+
+}
