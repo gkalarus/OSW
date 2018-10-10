@@ -109,6 +109,25 @@ main {
                 color: $grey;
                 margin-top: 4rem;
                 margin-bottom: 4rem;
+                text-decoration: none;
+                transition: all .3s;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 0;
+                    height: 2px;
+                    background: $blue;
+                    transition: width .3s;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                }
+
+                &:hover {
+                    color: $blue;
+                }
             }
         }
     }
