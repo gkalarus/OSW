@@ -19,11 +19,7 @@ header {
         position: relative;
         width: 30rem;
 
-        a {
-            text-decoration: none;
-            color: $white;
-            font-size: 2.2rem;
-
+        p {
             &:nth-child(1) {
                 position: absolute;
                 top: calc(8.3rem/2);
@@ -37,7 +33,40 @@ header {
                 right: 0;
                 transform: translateY(-50%);
             }
+
+            a {
+                position: relative;
+                display: inline-block;
+                text-decoration: none;
+                color: $white;
+                font-size: 2.2rem;
+                transition: transform 0.2s;
+
+                &:hover {
+                    transform: scale(0.9);
+                }
+
+                &::before {
+                    position: absolute;
+                    top: -2px;
+                    left: -7px;
+                    box-sizing: content-box;
+                    padding: 0 5px;
+                    width: 100%;
+                    height: 100%;
+                    border: 2px solid $white;
+                    content: '';
+                    opacity: 0;
+                    transform: scale(0.9);
+                }
+                &:hover::before {
+                    opacity: 1;
+                    transform: scale(1.2);
+                }
+            }
         }
+
+
     }
 
     .links-icons {
