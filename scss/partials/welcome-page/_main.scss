@@ -24,6 +24,9 @@ main {
             width: 25rem;
             display: flex;
             flex-direction: column;
+            &:nth-child(3) {
+                padding-bottom: 10rem;
+            }
 
             &__photo {
                 align-self: center;
