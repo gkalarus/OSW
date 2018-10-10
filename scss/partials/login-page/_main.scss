@@ -32,6 +32,8 @@ main {
                     font-size: 2rem;
                     background-color: $form-grey;
                     &::placeholder {
+                        font-size: 1.2rem;
+                        font-weight: 700;
                         color: red;
                     }
                     & + p {
