@@ -26,9 +26,11 @@ main {
             .form-group:nth-child(2),
             .form-group:nth-child(3) {
                 input {
+                    border: none;
                     border-radius: 0;
                     height: 4rem;
                     font-size: 2rem;
+                    background-color: $form-grey;
                     &::placeholder {
                         color: red;
                     }
