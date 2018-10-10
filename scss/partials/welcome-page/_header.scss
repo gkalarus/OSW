@@ -9,9 +9,18 @@ header {
         box-shadow: none;
     }
 
+    nav {
+        .navbar-collapse {
+            position: relative;
+            z-index: 1;
+        }
+    }
+
     .navbar-toggler {
         background-color: #fff;
     }
+
+
 }
 
 @media (min-width: 992px) {
