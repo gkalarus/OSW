@@ -29,6 +29,9 @@ main {
                     border-radius: 0;
                     height: 4rem;
                     font-size: 2rem;
+                    &::placeholder {
+                        color: red;
+                    }
                 }
             }
 
