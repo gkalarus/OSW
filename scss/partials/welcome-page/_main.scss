@@ -3,8 +3,19 @@ main {
     background-size: cover;
     min-height: calc(100vh - 8.3rem - 4.5rem);
 
+    .greeting {
+        color: $grey;
+        margin-top: 2rem;
+        font-size: 1.6rem;
+
+        span {
+            color: $blue;
+            font-weight: 700;
+        }
+    }
+
     .modules {
-        padding-top: 6rem;
+        padding-top: 7.5rem;
 
         .module {
             position: relative;
@@ -97,4 +108,19 @@ main {
             }
         }
     }
+}
+
+@media (min-width: 992px) {
+    main {
+        .greeting {
+            padding-right: 10rem;
+            font-size: 1.4rem;
+
+            span {
+                color: $blue;
+                font-weight: 700;
+            }
+        }
+    }
+
 }
